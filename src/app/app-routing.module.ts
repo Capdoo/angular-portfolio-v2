@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { IndexComponent } from './pages/index/index/index.component';
+import { EducationComponent } from './pages/education/education/education.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  //Home
+  { path: '', component: IndexComponent},
+  { path: 'home', component: IndexComponent},
+  { path: 'educacion', component: EducationComponent},
+  // { path: 'experiencia', component: MainExperienciaComponent},
+  // { path: 'proyectos', component: MainProyectosComponent},
+  // { path: 'contacto', component: MainContactoComponent},
+
+
+  { path: '**', redirectTo: '', pathMatch: 'full'}
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
