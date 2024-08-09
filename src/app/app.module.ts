@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { IndexModule } from './pages/index/index.module';
+
+import { ButtonModule } from 'primeng/button';
+import { PrimengModule } from './shared/primeng.module';
+import { EducationModule } from './pages/education/education.module';
+
 
 @NgModule({
   declarations: [
@@ -11,9 +18,13 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    // IndexModule
+    IndexModule,
+    EducationModule,
+    ButtonModule,
+    PrimengModule
   ],
   providers: [
     provideClientHydration()

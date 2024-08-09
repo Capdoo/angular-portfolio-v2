@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './pages/index/index/index.component';
 import { EducationComponent } from './pages/education/education/education.component';
+import { PrimengModule } from './shared/primeng.module';
 
 const routes: Routes = [
   //Home
@@ -17,7 +18,10 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes), 
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+  

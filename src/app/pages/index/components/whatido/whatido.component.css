@@ -1,0 +1,22 @@
+#img-tools{
+  border-radius: 1%;
+  height: auto;
+  width: 80%;
+  /* border: dotted; */
+}
+
+
+.icons-list{
+  border-radius: 1%;
+  height: auto;
+  width: 50px;
+  /* border: dotted; */
+}
+
+@media (min-width: 1200px) {
+  /* … */
+  .contenido {
+    /* width: 70% !important; */
+  }
+
+}

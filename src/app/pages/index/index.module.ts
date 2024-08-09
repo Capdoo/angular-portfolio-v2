@@ -4,8 +4,6 @@ import { IndexComponent } from './index/index.component';
 import { WhoiamComponent } from './components/whoiam/whoiam.component';
 import { WhatidoComponent } from './components/whatido/whatido.component';
 
-
-
 @NgModule({
   declarations: [
     IndexComponent,
@@ -15,11 +13,10 @@ import { WhatidoComponent } from './components/whatido/whatido.component';
   exports: [
     IndexComponent,
     // WhoiamComponent,
-    // WhatidoComponent
+    WhatidoComponent
   ],
   imports: [
     CommonModule,
-    // AppRoutingModule
   ]
 })
 export class IndexModule { }
