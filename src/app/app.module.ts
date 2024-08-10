@@ -10,6 +10,7 @@ import { IndexModule } from './pages/index/index.module';
 import { ButtonModule } from 'primeng/button';
 import { PrimengModule } from './shared/primeng.module';
 import { EducationModule } from './pages/education/education.module';
+import { ExperienceModule } from './pages/experience/experience.module';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { EducationModule } from './pages/education/education.module';
     SharedModule,
     IndexModule,
     EducationModule,
+    ExperienceModule,
     ButtonModule,
     PrimengModule
   ],

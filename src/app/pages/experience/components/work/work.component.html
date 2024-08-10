@@ -1,0 +1,75 @@
+<div class="mt-4 flex justify-content-center" style="border: none;">
+
+  <div class="contenido grid xl:px-8" style="border: none; width: 90%; height: auto;">
+
+    <!-- trabajo -->
+    <div class="mt-3 col-12 flex justify-content-center align-items-center" style="border: none; width: 100%;">
+
+
+      <div class="" style="border: none;width: 100%">
+        <p-panel header="Trabajo" [toggleable]="true" [collapsed]="false" styleClass="custom-panel">
+          <div class="" style="border: none;">
+            <p-timeline [value]="events" styleClass="customized-timeline">
+              <!-- iconos -->
+              <ng-template pTemplate="marker" let-event>
+                <span
+                  class="flex w-5rem h-5rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+                  [style]="{ 'background-color': event.color }">
+                  <img class=" w-full h-full border-circle " [src]="event.icon" alt="">
+                </span>
+              </ng-template>
+
+              <!-- cards -->
+              <ng-template pTemplate="content" let-event>
+                <p-card [header]="event.status" [subheader]="event.date" styleClass="custom-panel-body">
+                  <h5>{{event.puesto}}</h5>
+                  <img *ngIf="event.image"
+                    [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image" [alt]="event.name"
+                    width="200" class="shadow-2" />
+                  <ul>
+                    <li class="mt-3" *ngFor="let line of event.lines">{{line}}</li>
+                  </ul>
+                </p-card>
+              </ng-template>
+            </p-timeline>
+          </div>
+
+        </p-panel>
+      </div>
+    </div>
+
+    <!-- voluntariado -->
+    <div class="mt-3 mb-3 col-12 flex justify-content-center align-items-center" style="border: none; width: 100%;">
+      <div class="" style="border: none;width: 100%; width: 100%">
+        <p-panel header="Grupos Universitarios" [toggleable]="true" [collapsed]="false" styleClass="custom-panel">
+          <div class="flex justify-content-start" style="border: none;">
+            <p-timeline [value]="events2" styleClass="customized-timeline">
+              <!-- iconos -->
+              <ng-template pTemplate="marker" let-event>
+                <span
+                  class="flex w-5rem h-5rem align-items-center justify-content-center text-white border-circle z-1 shadow-1"
+                  [style]="{ 'background-color': event.color }">
+                  <img class=" w-full h-full border-circle " [src]="event.icon" alt="">
+                </span>
+              </ng-template>
+
+              <!-- cards -->
+              <ng-template pTemplate="content" let-event>
+                <p-card [header]="event.status" [subheader]="event.date" styleClass="custom-panel-body">
+                  <h5>{{event.puesto}}</h5>
+                  <img *ngIf="event.image"
+                    [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + event.image" [alt]="event.name"
+                    width="200" class="shadow-2" />
+                  <ul>
+                    <li class="mt-3" *ngFor="let line of event.lines">{{line}}</li>
+                  </ul>
+                </p-card>
+              </ng-template>
+            </p-timeline>
+          </div>
+        </p-panel>
+      </div>
+    </div>
+
+  </div>
+</div>
