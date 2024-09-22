@@ -4,6 +4,7 @@ import { IndexComponent } from './pages/index/index/index.component';
 import { EducationComponent } from './pages/education/education/education.component';
 import { PrimengModule } from './shared/primeng.module';
 import { ExperienceComponent } from './pages/experience/experience/experience.component';
+import { ProjectsComponent } from './pages/projects/projects/projects.component';
 
 const routes: Routes = [
   //Home
@@ -11,7 +12,7 @@ const routes: Routes = [
   { path: 'home', component: IndexComponent},
   { path: 'educacion', component: EducationComponent},
   { path: 'experiencia', component: ExperienceComponent},
-  // { path: 'proyectos', component: MainProyectosComponent},
+  { path: 'proyectos', component: ProjectsComponent},
   // { path: 'contacto', component: MainContactoComponent},
 
 

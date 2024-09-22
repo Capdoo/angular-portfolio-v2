@@ -11,6 +11,7 @@ import { ButtonModule } from 'primeng/button';
 import { PrimengModule } from './shared/primeng.module';
 import { EducationModule } from './pages/education/education.module';
 import { ExperienceModule } from './pages/experience/experience.module';
+import { ProjectsModule } from './pages/projects/projects.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ExperienceModule } from './pages/experience/experience.module';
     IndexModule,
     EducationModule,
     ExperienceModule,
+    ProjectsModule,
     ButtonModule,
     PrimengModule
   ],

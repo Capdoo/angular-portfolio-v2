@@ -70,10 +70,11 @@ export class WorkComponent {
         puesto: 'Desarrollador Backend'
       }
     ];
+
     this.events2 = [
       {
-        status: 'ZyTrust',
-        date: 'abril 2023 - actualidad',
+        status: 'AIRU',
+        date: 'junio 2020 - junio 2021',
         icon: '../../../../assets/airu3.jpg',
         color: '#9C27B0',
         lines: [
